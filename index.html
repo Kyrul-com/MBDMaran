@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBD Maran | Digital Archive</title>
+    <title>MBD Maran | Arkib Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,8 +12,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#00AEEF',
-                        'primary-dark': '#0077B6',
+                        primary: '#0001FC',        /* Logo Blue */
+                        'primary-dark': '#DE2D25', /* Logo Red used as dark/accent */
+                        secondary: '#DE2D25',
                     }
                 }
             }
@@ -32,16 +33,16 @@
                 class="w-12 h-12 rounded-lg shadow-lg group-hover:scale-105 transition animate-pulse-glow bg-white object-cover">
             <span
                 class="font-bold tracking-tighter text-xl uppercase italic group-hover:text-primary transition dark:text-white">
-                MBD MARAN <span class="text-primary underline">Archive</span>
+                MBD MARAN <span class="text-primary underline">Arkib</span>
             </span>
         </a>
         <div class="hidden md:flex gap-8 font-semibold text-sm uppercase items-center">
-            <a href="#home" class="hover:text-primary transition dark:hover:text-primary">Home</a>
-            <a href="#activities" class="hover:text-primary transition dark:hover:text-primary">Pillars</a>
-            <a href="#hierarchy" class="hover:text-primary transition dark:hover:text-primary">Hierarchy</a>
-            <a href="#ecosystem" class="hover:text-primary transition dark:hover:text-primary">Ecosystem</a>
-            <a href="#activity-feed" class="hover:text-primary transition dark:hover:text-primary">Activity</a>
-            <a href="#join" class="hover:text-primary transition dark:hover:text-primary">Join Us</a>
+            <a href="#home" class="hover:text-primary transition dark:hover:text-primary">Utama</a>
+            <a href="#activities" class="hover:text-primary transition dark:hover:text-primary">Teras</a>
+            <a href="#hierarchy" class="hover:text-primary transition dark:hover:text-primary">Hierarki</a>
+            <a href="#ecosystem" class="hover:text-primary transition dark:hover:text-primary">Ekosistem</a>
+            <a href="#activity-feed" class="hover:text-primary transition dark:hover:text-primary">Aktiviti</a>
+            <a href="#join" class="hover:text-primary transition dark:hover:text-primary">Sertai Kami</a>
 
             <!-- Dark Mode Toggle -->
             <button id="theme-toggle"
@@ -61,20 +62,23 @@
 
         <div class="relative z-10 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
             <div class="animate-float">
-                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase flex items-center gap-2">
-                    <i data-lucide="sparkles" size="16"></i> District Youth Council
+                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase flex flex-col items-start gap-1">
+                    <span class="flex items-center gap-2"><i data-lucide="sparkles" size="16"></i> Majlis Belia
+                        Daerah</span>
+                    <span class="text-xs text-slate-500 font-semibold tracking-normal normal-case">青年区理事会 / மாவட்ட
+                        இளைஞர் மன்றம்</span>
                 </h2>
                 <h1 class="text-6xl md:text-8xl font-extrabold leading-tight mb-6 tracking-tight dark:text-white">
                     BELIA<br><span class="blue-gradient-text drop-shadow-sm">MARAN</span></h1>
                 <p
                     class="max-w-md text-slate-600 dark:text-slate-300 mb-8 border-l-4 border-primary pl-4 text-lg font-medium">
-                    Empowering the youth of Maran through leadership, digital innovation, and community service.
-                    Official Archive v1.0.
+                    Memperkasakan belia Maran melalui kepimpinan, inovasi digital, dan khidmat masyarakat.
+                    Arkib Rasmi v1.0.
                 </p>
                 <div class="flex gap-4">
                     <button id="btn-explore"
                         class="blue-gradient text-white px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl transition">
-                        EXPLORE DATA <i data-lucide="arrow-right" size="18"></i>
+                        TEROKA DATA <i data-lucide="arrow-right" size="18"></i>
                     </button>
                     <button id="btn-agm"
                         class="bg-white dark:bg-slate-800 dark:text-white dark:border dark:border-slate-700 px-8 py-4 rounded-full font-bold shadow-md hover:bg-slate-50 dark:hover:bg-slate-700 flex items-center gap-2 transition hover:-translate-y-1">
@@ -87,9 +91,9 @@
                 <div class="absolute top-0 right-0 glass-card p-6 rounded-2xl w-64 animate-float"
                     style="animation-delay: 1s;">
                     <i data-lucide="calendar" class="text-primary mb-2"></i>
-                    <h3 class="font-bold dark:text-white">Next Event</h3>
+                    <h3 class="font-bold dark:text-white">Acara Seterusnya</h3>
                     <p class="text-xs text-slate-500 dark:text-slate-400">Pesta Pelita Raya</p>
-                    <div class="mt-4 bg-primary/10 text-primary text-[10px] font-bold py-1 px-2 rounded w-fit">14 MARCH
+                    <div class="mt-4 bg-primary/10 text-primary text-[10px] font-bold py-1 px-2 rounded w-fit">14 MAC
                         2026</div>
                 </div>
 
@@ -102,7 +106,7 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-sm dark:text-white">Dr. Haikal Zakaria</h3>
-                            <p class="text-[10px] text-slate-400 dark:text-slate-400 tracking-wider font-bold">CHAIRMAN
+                            <p class="text-[10px] text-slate-400 dark:text-slate-400 tracking-wider font-bold">PENGERUSI
                             </p>
                         </div>
                     </div>
@@ -115,9 +119,10 @@
     <section id="activities" class="py-24 bg-white dark:bg-slate-900 relative transition-colors duration-500">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 reveal">
-                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Vision & Mission</h2>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Strategic Pillars <span
+                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Visi & Misi</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Teras Strategik <span
                         class="blue-gradient-text">2026</span></h3>
+                <p class="text-sm text-slate-500 font-semibold mt-2">战略支柱 / மூலோபாய தூண்கள்</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Pillar 1 -->
@@ -127,12 +132,12 @@
                         class="w-14 h-14 blue-gradient rounded-xl mb-6 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition duration-300">
                         <i data-lucide="laptop"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3 dark:text-white">1. Digital Literacy</h4>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">1. Literasi Digital</h4>
                     <p
                         class="text-sm text-slate-700 dark:text-slate-300 font-bold mb-3 bg-blue-50 dark:bg-blue-900/30 py-1 px-3 rounded-md w-fit inline-block">
                         Belia Digital</p>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Training Maran youth in
-                        coding, AI, and social media management.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Melatih belia Maran dalam
+                        pengekodan, AI, dan pengurusan media sosial.</p>
                 </div>
                 <!-- Pillar 2 -->
                 <div class="glass-card p-8 rounded-2xl reveal-left group cursor-pointer border border-slate-100 dark:border-slate-800"
@@ -141,12 +146,12 @@
                         class="w-14 h-14 blue-gradient rounded-xl mb-6 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition duration-300">
                         <i data-lucide="trending-up"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3 dark:text-white">2. Economic Resilience</h4>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">2. Ketahanan Ekonomi</h4>
                     <p
                         class="text-sm text-slate-700 dark:text-slate-300 font-bold mb-3 bg-blue-50 dark:bg-blue-900/30 py-1 px-3 rounded-md w-fit inline-block">
                         Juadah Makmur</p>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Supporting young entrepreneurs
-                        via the Juadah Makmur initiative and carnivals.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Menyokong usahawan muda
+                        melalui inisiatif Juadah Makmur dan karnival.</p>
                 </div>
                 <!-- Pillar 3 -->
                 <div class="glass-card p-8 rounded-2xl reveal-right group cursor-pointer border border-slate-100 dark:border-slate-800"
@@ -155,12 +160,12 @@
                         class="w-14 h-14 blue-gradient rounded-xl mb-6 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition duration-300">
                         <i data-lucide="users"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3 dark:text-white">3. Social Leadership</h4>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">3. Kepimpinan Sosial</h4>
                     <p
                         class="text-sm text-slate-700 dark:text-slate-300 font-bold mb-3 bg-blue-50 dark:bg-blue-900/30 py-1 px-3 rounded-md w-fit inline-block">
                         Muda Retreat</p>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Organizing the Retreat
-                        Pemimpin Muda Pahang 2026 to build district leaders.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Menganjurkan Retreat
+                        Pemimpin Muda Pahang 2026 untuk membina pemimpin daerah.</p>
                 </div>
                 <!-- Pillar 4 -->
                 <div class="glass-card p-8 rounded-2xl reveal-right group cursor-pointer border border-slate-100 dark:border-slate-800"
@@ -169,104 +174,79 @@
                         class="w-14 h-14 blue-gradient rounded-xl mb-6 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition duration-300">
                         <i data-lucide="heart-handshake"></i>
                     </div>
-                    <h4 class="text-xl font-bold mb-3 dark:text-white">4. Volunteerism</h4>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">4. Kesukarelawanan</h4>
                     <p
                         class="text-sm text-slate-700 dark:text-slate-300 font-bold mb-3 bg-blue-50 dark:bg-blue-900/30 py-1 px-3 rounded-md w-fit inline-block">
-                        Youth Volunter</p>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Managing the Youth
-                        Volunteer@Community platform for local infrastructure.</p>
+                        Sukarelawan Belia</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Mengurus platform Sukarelawan
+                        Belia@Komuniti untuk infrastruktur tempatan.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HIERARCHY / ORG CHART SECTION -->
+    <!-- PRESIDENT SECTION (Replaces Hierarchy) -->
     <section id="hierarchy"
         class="py-24 bg-[var(--bg-color)] relative border-t border-slate-200 dark:border-slate-800 transition-colors duration-500 overflow-hidden">
-        <div class="container mx-auto px-6 text-center">
-            <div class="mb-16 reveal">
-                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Structure & Leadership</h2>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">MBD Maran <span
-                        class="blue-gradient-text">Hierarchy</span></h3>
-                <p class="max-w-xl mx-auto text-slate-600 dark:text-slate-400 mt-4 font-medium">
-                    The core executive committee leading Majlis Belia Daerah Maran towards achieving the 2026 vision.
-                </p>
-            </div>
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-            <div class="max-w-4xl mx-auto relative pt-8">
-                <!-- Chairman (Top Level) -->
-                <div class="flex justify-center relative reveal z-10">
-                    <div
-                        class="glass-card p-6 rounded-2xl border-t-4 border-primary shadow-lg w-64 text-center group cursor-pointer relative z-20 hover:-translate-y-2">
-                        <div
-                            class="w-20 h-20 bg-slate-200 dark:bg-slate-700 mx-auto rounded-full mb-4 overflow-hidden border-4 border-white dark:border-slate-800 shadow flex items-center justify-center group-hover:border-primary transition duration-300">
-                            <i data-lucide="user-check" class="text-slate-400" size="32"></i>
-                        </div>
-                        <h4 class="font-bold text-lg dark:text-white">Dr. Haikal Zakaria</h4>
-                        <p class="text-xs font-bold text-primary tracking-widest uppercase mt-1">Chairman</p>
+                <!-- Image Section (Side) -->
+                <div class="lg:col-span-5 relative reveal-left">
+                    <div class="relative z-10">
+                        <img src="haikal.png" alt="Dr. Haikal Zakaria"
+                            class="w-full h-auto object-contain transition duration-700 drop-shadow-2xl hover:scale-105">
                     </div>
-                    <!-- Vertical Line down to Level 2 -->
-                    <div class="hierarchy-line hidden md:block"></div>
+                    <!-- Decorative elements behind image -->
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-primary/30 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-dark/30 rounded-full blur-3xl"></div>
                 </div>
 
-                <!-- Horizontal Connector Line for Level 2 -->
-                <div class="relative mt-12 hidden md:block reveal z-0">
-                    <div class="hierarchy-horizontal"></div>
+                <!-- Text Section -->
+                <div
+                    class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left reveal-right relative z-10">
+                    <h2
+                        class="text-primary font-bold mb-2 tracking-widest uppercase flex items-center justify-center lg:justify-start gap-2">
+                        <i data-lucide="award" size="20"></i> Kepimpinan Utama
+                    </h2>
+
+                    <h3
+                        class="text-6xl md:text-8xl font-extrabold text-slate-800 dark:text-white mb-2 leading-tight tracking-tight">
+                        Dr. Haikal <br /><span class="blue-gradient-text">Zakaria</span>
+                    </h3>
+
+                    <p
+                        class="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-bold tracking-widest uppercase mb-10">
+                        Pengerusi Majlis Belia Daerah Maran
+                    </p>
+
+                    <div
+                        class="relative glass p-10 rounded-3xl border-l-8 border-primary shadow-xl italic text-lg md:text-2xl text-slate-700 dark:text-slate-300">
+                        <i data-lucide="quote"
+                            class="absolute -top-5 -left-5 w-12 h-12 text-white bg-primary rounded-full p-2 shadow-lg"></i>
+                        <p class="relative z-10 leading-relaxed font-medium">
+                            "Masa depan Maran terletak pada kekuatan dan inovasi belianya. Melalui Teras Strategik 2026,
+                            kita bukan sahaja membina infrastruktur fizikal, tetapi juga ekosistem pemikiran kelas
+                            pertama. Bersama, kita pacu perubahan."
+                        </p>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <div
+                            class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-full font-bold text-sm tracking-widest uppercase shadow-sm">
+                            <i data-lucide="zap" size="16" class="inline-block mr-2 text-primary"></i> Inovatif
+                        </div>
+                        <div
+                            class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-full font-bold text-sm tracking-widest uppercase shadow-sm">
+                            <i data-lucide="eye" size="16" class="inline-block mr-2 text-primary"></i> Berwawasan
+                        </div>
+                        <div
+                            class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-full font-bold text-sm tracking-widest uppercase shadow-sm">
+                            <i data-lucide="users" size="16" class="inline-block mr-2 text-primary"></i> Akar Umbi
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Level 2 (Deputy, Secretary, Treasurer) -->
-                <div class="flex flex-col md:flex-row justify-center gap-8 mt-8 md:mt-10 relative z-10">
-
-                    <!-- Deputy -->
-                    <div
-                        class="glass-card p-6 rounded-2xl shadow-md w-full md:w-64 text-center group cursor-pointer reveal-left relative">
-                        <!-- Connector peg -->
-                        <div
-                            class="absolute -top-10 left-1/2 w-0.5 h-10 bg-slate-200 dark:bg-slate-600 hidden md:block transform -translate-x-1/2">
-                        </div>
-                        <div
-                            class="w-16 h-16 bg-slate-200 dark:bg-slate-700 mx-auto rounded-full mb-4 overflow-hidden border-2 border-white dark:border-slate-800 flex items-center justify-center">
-                            <i data-lucide="user" class="text-slate-400" size="24"></i>
-                        </div>
-                        <h4 class="font-bold text-md dark:text-white">Ahmad Fauzi</h4>
-                        <p
-                            class="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mt-1">
-                            Deputy Chairman</p>
-                    </div>
-
-                    <!-- Secretary -->
-                    <div
-                        class="glass-card p-6 rounded-2xl shadow-md w-full md:w-64 text-center group cursor-pointer reveal relative">
-                        <div
-                            class="absolute -top-10 left-1/2 w-0.5 h-10 bg-slate-200 dark:bg-slate-600 hidden md:block transform -translate-x-1/2">
-                        </div>
-                        <div
-                            class="w-16 h-16 bg-slate-200 dark:bg-slate-700 mx-auto rounded-full mb-4 overflow-hidden border-2 border-white dark:border-slate-800 flex items-center justify-center">
-                            <i data-lucide="file-text" class="text-slate-400" size="24"></i>
-                        </div>
-                        <h4 class="font-bold text-md dark:text-white">Nur Aisyah</h4>
-                        <p
-                            class="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mt-1">
-                            Secretary General</p>
-                    </div>
-
-                    <!-- Treasurer -->
-                    <div
-                        class="glass-card p-6 rounded-2xl shadow-md w-full md:w-64 text-center group cursor-pointer reveal-right relative">
-                        <div
-                            class="absolute -top-10 left-1/2 w-0.5 h-10 bg-slate-200 dark:bg-slate-600 hidden md:block transform -translate-x-1/2">
-                        </div>
-                        <div
-                            class="w-16 h-16 bg-slate-200 dark:bg-slate-700 mx-auto rounded-full mb-4 overflow-hidden border-2 border-white dark:border-slate-800 flex items-center justify-center">
-                            <i data-lucide="briefcase" class="text-slate-400" size="24"></i>
-                        </div>
-                        <h4 class="font-bold text-md dark:text-white">Siti Sarah</h4>
-                        <p
-                            class="text-[10px] font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mt-1">
-                            Treasurer</p>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
@@ -276,14 +256,17 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
                 <div>
-                    <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">The Ecosystem</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Affiliated
-                        <br>Organizations
+                    <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Ekosistem</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Organisasi
+                        <br>Gabungan
                     </h3>
+                    <p class="text-sm text-slate-500 mt-2 font-semibold uppercase tracking-widest">附属组织 / இணைந்த
+                        அமைப்புகள்</p>
                 </div>
                 <p
                     class="max-w-md text-slate-600 dark:text-slate-400 mt-6 md:mt-0 font-medium border-l-4 border-primary pl-4">
-                    MBD Maran acts as an umbrella for several grassroots bodies working together towards a common goal.
+                    MBD Maran bertindak sebagai payung untuk pelbagai badan akar umbi yang bekerjasama ke arah satu
+                    matlamat yang sama.
                 </p>
             </div>
 
@@ -299,7 +282,7 @@
                         <h4 class="font-bold text-lg mb-1 dark:text-white">GPMS Maran</h4>
                         <p class="text-[11px] font-bold text-primary mb-2 uppercase tracking-wide">Pelajar Melayu
                             Semenanjung</p>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Student advocacy & welfare.</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Advokasi & kebajikan pelajar.</p>
                     </div>
                 </div>
                 <!-- Org 2 -->
@@ -311,9 +294,9 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">MAYC Maran</h4>
-                        <p class="text-[11px] font-bold text-primary mb-2 uppercase tracking-wide">Malaysian Youth Club
+                        <p class="text-[11px] font-bold text-primary mb-2 uppercase tracking-wide">Kelab Belia Malaysia
                         </p>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Sports, recreation & bonding.</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Sukan, rekreasi & perpaduan.</p>
                     </div>
                 </div>
                 <!-- Org 3 -->
@@ -325,8 +308,9 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">Belia 4B Maran</h4>
-                        <p class="text-[11px] font-bold text-primary mb-2 uppercase tracking-wide">4B Youth Movement</p>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Rural development & commerce.</p>
+                        <p class="text-[11px] font-bold text-primary mb-2 uppercase tracking-wide">Pergerakan Belia 4B
+                        </p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Pembangunan luar bandar & perdagangan.</p>
                     </div>
                 </div>
                 <!-- Org 4 -->
@@ -338,9 +322,9 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-lg mb-1 text-slate-800 dark:text-white">Motor Tok Wan</h4>
-                        <p class="text-[11px] font-bold text-slate-400 mb-2 uppercase tracking-wide">Automotive Interest
+                        <p class="text-[11px] font-bold text-slate-400 mb-2 uppercase tracking-wide">Minat Automotif
                         </p>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Community via automotive groups.</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Komuniti melalui kumpulan automotif.</p>
                     </div>
                 </div>
                 <!-- Org 5 -->
@@ -352,9 +336,11 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-lg mb-1 text-slate-800 dark:text-white">St. John Ambulans</h4>
-                        <p class="text-[11px] font-bold text-slate-400 mb-2 uppercase tracking-wide">Emergency Response
+                        <p class="text-[11px] font-bold text-slate-400 mb-2 uppercase tracking-wide">Tindak Balas
+                            Kecemasan
                         </p>
-                        <p class="text-sm text-slate-600 dark:text-slate-400">Health & safety training for youth.</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Latihan kesihatan & keselamatan untuk
+                            belia.</p>
                     </div>
                 </div>
             </div>
@@ -371,10 +357,12 @@
                         <path
                             d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
                     </svg>
-                    Live Updates
+                    Kemas Kini Langsung
                 </h2>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Recent <span
-                        class="blue-gradient-text">Activity</span></h3>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Aktiviti <span
+                        class="blue-gradient-text">Terkini</span></h3>
+                <p class="text-sm text-slate-500 mt-2 font-semibold uppercase tracking-widest">最新活动 / சமீபத்திய
+                    செயல்பாடு</p>
             </div>
 
             <div
@@ -404,12 +392,15 @@
         <div class="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <div class="reveal-left">
-                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Be Part of the Movement</h2>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white mb-6">Join <span
+                <h2 class="text-primary font-bold mb-2 tracking-widest uppercase">Jadilah Sebahagian Daripada Pergerakan
+                </h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white mb-6">Sertai <span
                         class="blue-gradient-text">MBD Maran</span></h3>
+                <p class="text-sm text-slate-500 -mt-4 mb-6 font-semibold uppercase tracking-widest">加入我们 / எங்களில்
+                    சேரவும்</p>
                 <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">
-                    Ready to make an impact? Register as an official youth member, volunteer for our activities, and
-                    help us shape the future of Maran under the 2026 Strategic Pillars.
+                    Sedia untuk memberi impak? Daftar sebagai ahli belia rasmi, sukarelawan untuk aktiviti kami, dan
+                    bantu kami membentuk masa depan Maran di bawah Teras Strategik 2026.
                 </p>
                 <ul class="space-y-4 mb-8">
                     <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 font-medium">
@@ -417,41 +408,41 @@
                             class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center shrink-0">
                             <i data-lucide="check" size="16"></i>
                         </div>
-                        Exclusive access to training workshops and events.
+                        Akses eksklusif ke bengkel latihan dan acara.
                     </li>
                     <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 font-medium">
                         <div
                             class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center shrink-0">
                             <i data-lucide="check" size="16"></i>
                         </div>
-                        Networking opportunities with state leaders.
+                        Peluang rangkaian dengan pemimpin negeri.
                     </li>
                     <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 font-medium">
                         <div
                             class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 flex items-center justify-center shrink-0">
                             <i data-lucide="check" size="16"></i>
                         </div>
-                        Official Digital ID & Certificate of Participation.
+                        ID Digital Rasmi & Sijil Penyertaan.
                     </li>
                 </ul>
             </div>
 
             <div class="glass-card p-10 rounded-3xl shadow-2xl reveal-right">
                 <form id="join-form" class="flex flex-col gap-6">
-                    <h4 class="text-2xl font-bold dark:text-white mb-2">Member Registration Form</h4>
+                    <h4 class="text-2xl font-bold dark:text-white mb-2">Borang Pendaftaran Ahli</h4>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex flex-col gap-2">
                             <label
-                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Full
-                                Name</label>
+                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Nama
+                                Penuh</label>
                             <input type="text" required placeholder="Ahmad Bin Abdullah"
                                 class="glass-input px-4 py-3 rounded-xl placeholder-slate-400 dark:placeholder-slate-500 w-full transition">
                         </div>
                         <div class="flex flex-col gap-2">
                             <label
-                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">IC
-                                Number</label>
+                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Nombor
+                                Kad Pengenalan</label>
                             <input type="text" required placeholder="YYMMDD-06-XXXX"
                                 class="glass-input px-4 py-3 rounded-xl placeholder-slate-400 dark:placeholder-slate-500 w-full transition">
                         </div>
@@ -460,15 +451,15 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex flex-col gap-2">
                             <label
-                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Email
-                                Address</label>
+                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Alamat
+                                E-mel</label>
                             <input type="email" required placeholder="ahmad@example.com"
                                 class="glass-input px-4 py-3 rounded-xl placeholder-slate-400 dark:placeholder-slate-500 w-full transition">
                         </div>
                         <div class="flex flex-col gap-2">
                             <label
-                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Mobile
-                                Number</label>
+                                class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Nombor
+                                Telefon</label>
                             <input type="tel" required placeholder="012-345 6789"
                                 class="glass-input px-4 py-3 rounded-xl placeholder-slate-400 dark:placeholder-slate-500 w-full transition">
                         </div>
@@ -476,24 +467,25 @@
 
                     <div class="flex flex-col gap-2">
                         <label
-                            class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Area
-                            of Interest</label>
+                            class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest pl-1">Minat
+                            / Bidang</label>
                         <select required
                             class="glass-input px-4 py-3 rounded-xl  w-full transition appearance-none cursor-pointer">
-                            <option value="">Select an Area...</option>
-                            <option value="digital">Digital & Technology</option>
-                            <option value="economy">Economy & Entrepreneurship</option>
-                            <option value="volunteer">Volunteerism & Community</option>
-                            <option value="sports">Sports & Recreation</option>
+                            <option value="">Pilih Bidang...</option>
+                            <option value="digital">Digital & Teknologi</option>
+                            <option value="economy">Ekonomi & Keusahawanan</option>
+                            <option value="volunteer">Kesukarelawanan & Komuniti</option>
+                            <option value="sports">Sukan & Rekreasi</option>
                         </select>
                     </div>
 
                     <button type="submit"
                         class="blue-gradient text-white mt-4 py-4 rounded-xl font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300 flex justify-center items-center gap-2">
-                        SUBMIT APPLICATION <i data-lucide="send" size="18"></i>
+                        HANTAR PERMOHONAN <i data-lucide="send" size="18"></i>
                     </button>
-                    <p class="text-xs text-center text-slate-500 dark:text-slate-400 mt-2">By registering, you agree to
-                        our Terms of Service & Privacy Policy.</p>
+                    <p class="text-xs text-center text-slate-500 dark:text-slate-400 mt-2">Dengan mendaftar, anda
+                        bersetuju dengan
+                        Syarat Perkhidmatan & Dasar Privasi kami.</p>
                 </form>
             </div>
 
@@ -525,7 +517,7 @@
                 </a>
             </div>
             <div class="w-16 h-1 bg-slate-800 mx-auto rounded mb-4"></div>
-            <p class="text-slate-500 text-sm font-medium">© 2026 Majlis Belia Daerah Maran. All Rights Reserved.</p>
+            <p class="text-slate-500 text-sm font-medium">© 2026 Majlis Belia Daerah Maran. Hak Cipta Terpelihara.</p>
         </div>
     </footer>
 
